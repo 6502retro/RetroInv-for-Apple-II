@@ -1,0 +1,20 @@
+import sys
+sys.path.insert(0, 'tools')
+from sim import boot
+a = boot('build/RETROINV.SYSTEM', 'test/vol')
+a.run(); a.key(' '); a.run()
+def add(name, maker, year, typ_right, cond_moves, loc, val, notes):
+    a.key('N', oa=True); a.run()
+    a.key(name+'\t'+maker+'\t'+year+'\t')
+    for _ in range(typ_right): a.key(0x15)
+    a.key('\t')
+    for _ in range(cond_moves): a.key(0x15)
+    a.key('\t'+loc+'\t'+val+'\t'+notes)
+    a.run()
+add('Apple IIe Enhanced', 'Apple', '1985', 0, 1, 'Desk', '450', 'Platinum keyboard, 128K, Extended 80-col card')
+print(a.screen()); a.key(0x0D); a.run()
+add('Disk II', 'Apple', '1978', 1, 0, 'Shelf 2', '125.5', 'Works, cleaned heads')
+a.key(0x0D); a.run()
+add('Oregon Trail', 'MECC', '1985', 2, 3, 'Box A', '$20', 'Original 5.25" disk')
+a.key(0x0D); a.run()
+print(a.screen())

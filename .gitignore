@@ -1,0 +1,9 @@
+build/*.o
+build/*.lst
+build/*.map
+build/*.lbl
+build/mchdr.raw
+test/vol/
+test/vb/
+test/vs/
+__pycache__/
