@@ -136,6 +136,6 @@ Types: 1 Computer 2 Peripheral 3 Software 4 Accessory 5 Documents 6 Other
 header-less format (8 lines) are still read.
 
 ## License
-RetroInv is released under the MIT License (see LICENSE), © 2026 Jonathan
+RetroInv is released under the MIT License (see LICENSE and NOTICE), © 2026 Jonathan
 Adar (6502Retro). ProDOS, BASIC.SYSTEM and the Mouse Calc sample sheet are
 not covered; they belong to their owners.
