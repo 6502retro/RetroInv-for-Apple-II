@@ -134,3 +134,8 @@ item-no part-of(item no., 0 = none) slot(0 none, 1-8 = slot 0-7, 9 aux).
 Types: 1 Computer 2 Peripheral 3 Software 4 Accessory 5 Documents 6 Other
 7 Card 8 Part. RETROINV2 files (9 lines, no last three) and the original
 header-less format (8 lines) are still read.
+
+## License
+RetroInv is released under the MIT License (see LICENSE), © 2026 Jonathan
+Adar (6502Retro). ProDOS, BASIC.SYSTEM and the Mouse Calc sample sheet are
+not covered; they belong to their owners.
